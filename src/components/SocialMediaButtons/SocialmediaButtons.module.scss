@@ -1,0 +1,30 @@
+// SocialMediaButtons.module.scss
+@import "../../styles/_variables.scss";
+
+.socialButtonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; // Espacio entre botones
+}
+
+.socialButton {
+  display: inline-flex;
+  align-items: center;
+  background-color: $primary-color;
+  color: $light-color;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  gap: 10px; // Espacio entre el icono y el texto
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+
+  .iconImage {
+    width: 20px;
+    height: 20px;
+  }
+}

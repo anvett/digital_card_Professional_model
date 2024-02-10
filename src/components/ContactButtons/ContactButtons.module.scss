@@ -1,0 +1,27 @@
+
+@import "../../styles/_variables.scss";
+
+.contactButtonsContainer {
+  padding: 20px;
+}
+
+.contactButton {
+  display: flex;
+  align-items: center;
+  gap: 10px; // Espacio entre el icono y el texto
+  background-color: $primary-color;
+  color: $light-color;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+
+  .icon {
+    width: 30px; // Tamaño del icono
+    height: 30px;
+  }
+}

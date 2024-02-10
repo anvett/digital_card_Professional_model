@@ -19,6 +19,8 @@ import styles from "../styles/variants/variant1.module.scss";
 import ImageCarousel from "@/components/Caroussel/Caroussel";
 import Services from "@/components/Services/Services";
 import WhatsAppButton from "@/components/WhatsAppButton/WhatsAppButton";
+import SocialMediaButtons from "@/components/SocialMediaButtons/SocialMediaButtons";
+import ContactButtons from "@/components/ContactButtons/ContactButtons";
 
 export default function Modelo2() {
   // const items = [
@@ -109,6 +111,58 @@ export default function Modelo2() {
       imageUrl: "/images/users/hero2.jpeg",
     },
   ];
+
+  // const socialLinks = [
+  //   {
+  //     name: 'Facebook',
+  //     iconSrc: "/icons/facebook_g.png",
+  //     href: 'https://www.facebook.com'
+  //   },
+  //   {
+  //     name: 'Instagram',
+  //     iconSrc: "/icons/instagram_g.png",
+  //     href: 'https://www.twitter.com'
+  //   },
+  //   {
+  //     name: 'Tik Tok',
+  //     iconSrc: "/icons/tiktok_g.png",
+  //     href: 'https://www.twitter.com'
+  //   },
+    
+  // ];
+
+  // const contacts = [
+  //   {
+  //     href: "tel:+1234567890",
+  //     src: "/icons/phone-icon.png", // Asegúrate de que esta ruta sea correcta
+  //     alt: "Phone",
+  //     label: "Llámanos",
+  //   },
+  //   {
+  //     href: "mailto:email@example.com",
+  //     src: "/icons/email-icon.png", // Asegúrate de que esta ruta sea correcta
+  //     alt: "Email",
+  //     label: "Envíanos un correo",
+  //   },
+  //   {
+  //     href: "https://wa.me/+1234567890",
+  //     src: "/icons/whatsapp-icon.png", // Asegúrate de que esta ruta sea correcta
+  //     alt: "WhatsApp",
+  //     label: "WhatsApp",
+  //   },
+  //   {
+  //     href: "https://t.me/usernameTelegram",
+  //     src: "/icons/telegram-icon.png", // Asegúrate de que esta ruta sea correcta
+  //     alt: "Telegram",
+  //     label: "Telegram",
+  //   },
+  //   {
+  //     href: "https://maps.google.com/?q=Ubicación",
+  //     src: "/icons/location-icon.png", // Asegúrate de que esta ruta sea correcta
+  //     alt: "Location",
+  //     label: "Encuéntranos",
+  //   },
+  // ];
 
   return (
     <>
@@ -211,6 +265,10 @@ export default function Modelo2() {
                       phone="+593986850295"
                       message="Hola, me gustaría saber más sobre tus servicios"
                     />
+
+                    
+
+                    {/* <SocialMediaButtons socialLinks={socialLinks} /> */}
                   </section>
                 </motion.div>
               </section>

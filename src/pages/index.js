@@ -16,11 +16,12 @@ import QRCodeComponent from "@/components/QrCodeComponent/QrCodeComponent";
 import Footer from "@/components/Footer/Footer";
 import CustomNavbar from "@/components/Navbar/Navbar";
 import styles from "../styles/variants/variant1.module.scss";
-import ImageCarousel from "@/components/Caroussel/Caroussel";
 import Services from "@/components/Services/Services";
 import WhatsAppButton from "@/components/WhatsAppButton/WhatsAppButton";
 import SocialMediaButtons from "@/components/SocialMediaButtons/SocialMediaButtons";
 import ContactButtons from "@/components/ContactButtons/ContactButtons";
+import Slider from "@/components/Slider/Slider";
+
 
 export default function Modelo2() {
   // const items = [
@@ -66,49 +67,59 @@ export default function Modelo2() {
   // ];
 
   const carouselImages = [
+    
+    // {
+    //   src: "/images/users/cirugia.jpeg",
+    //   alt: "Cirugía imagen",
+    //   title: "Cirugía General",
+    //   // description: ["Cirugía General", "Cirugía laparoscopica mínimamente invasiva"],
+    // },
     {
-      full: "/images/users/cirugia4.jpeg",
-      alt: "Cirugía imagen",
-      description: "Cirugía general",
-      experience: [
-        "Especialista en cirugía general",
-        "Seguridad y confianza en cada procedimiento",
-      ],
-    },
-    {
-      full: "/images/users/cirugia.jpeg",
-      alt: "Cirugía imagen",
-      description: "Cirugía Digestiva",
-      experience: ["Especialista en cirugía digestiva", "Tu salud en buenas manos"],
-    },
-    {
-      full: "/images/users/consulta2.jpeg",
+      src: "/images/users/cirugia2.jpeg",
       alt: "Nutrición imagen",
-      description: "Nutrición y Dietética",
-      experience: ["Especialista en nutrición", "Garantía de resultados óptimos"],
+      title: "Cirugía Oncológica Digestiva",
+      // description: ["Prevención,diagnóstico, tratamiento y seguimiento de pacientes oncologicos"],
+    },
+    {
+      src: "/images/users/cirugia3.jpeg",
+      alt: "Nutrición imagen",
+      title: "Cirugía Oncológica Digestiva",
+      // description: ["Cirugía laparoscopica mínimamente invasiva"],
+    },
+    {
+      src: "/images/users/cirugia5.jpg",
+      alt: "Nutrición imagen",
+      title: "Cirugía Oncológica Digestiva",
+      // description: ["Cirugía laparoscopica mínimamente invasiva"],
+    },
+    {
+      src: "/images/users/cirugia6.jpg",
+      alt: "Nutrición imagen",
+      title: "Cirugía Oncológica Digestiva",
+      //experience: ["Cirugía laparoscopica mínimamente invasiva"],
     },
   ];
 
   const service = [
     {
       service: "Cirugía General",
-      description: "Espacialista en cirugía general.",
+      description: " Especialidad en Cirugía general y laparoscopia mínimamente invasiva. Caracas Venezuela",
       imageUrl: "/images/users/cirugia3.jpeg",
     },
     {
-      service: "Cirugía Digestiva ",
-      description: "Especialista en cirugía general digestiva.",
-      imageUrl: "/images/users/cirugia.jpeg",
+      service: "Cirugía Oncológica Digestiva ",
+      description: "Cirugía laparoscopica mínimamente invasiva. Barcelona España. Prevención,diagnóstico, tratamiento y seguimiento de pacientes oncologicos.",
+      imageUrl: "/images/users/cirugia_oncologica_digestiva.jpg",
     },
     {
       service: "Nutrición y Dietética",
-      description: "Especialista en nutrición y dietética.",
+      description: "Evaluar, educar, diseñar planes nutricionales personalizados acorde con las necesidades. Manejo nutricional de pacientes oncológicos. Barcelona España",
       imageUrl: "/images/users/consulta2.jpeg",
     },
     {
       service: "Soporte paliativo pacientes oncológicos",
-      description: "Espacialista en soporte paliativo para pacientes oncológicos.",
-      imageUrl: "/images/users/hero2.jpeg",
+      description: "Procedimientos con objetivos específicos para aliviar los síntomas y mejorar la calidad de vida de pacientes oncológicos, manteniendo su independencia y autonomía. Barcelona España ",
+      imageUrl: "/images/users/cuidados_paliativos.jpg",
     },
   ];
 
@@ -184,7 +195,7 @@ export default function Modelo2() {
 
       <Layout>
         <CustomNavbar
-          logoSrc="/images/users/logo.png"
+          logoSrc="/images/users/logo.pn"
           logoClassName={styles.navbarLogo}
           navClassName={styles.nav}
           navLinkClassName={styles.navLink}
@@ -249,13 +260,13 @@ export default function Modelo2() {
 
                   <section className={styles.contactButtons}>
                     <ContactIcons
-                      phone="+593986850295"
+                      phone="+593986845992"
                       phoneIcon="/icons/call_g.png"
                       email="draflores_85@hotmail.com"
                       emailIcon="/icons/email_g.png"
-                      whatsapp="+593986850295"
+                      whatsapp="+593986845992"
                       whatsappIcon="/icons/whatsapp_g.png"
-                      telegram="+593986850295"
+                      telegram="+593986845992"
                       telegramIcon="/icons/telegram_g.png"
                       location={"Clínica Infes, Quito, Ecuador"}
                       locationIcon="/icons/ubicacion_g.png"
@@ -274,7 +285,7 @@ export default function Modelo2() {
               </section>
               <section className={styles.imageSection}>
                 <Image
-                  src="/images/users/hero.jpeg"
+                  src="/images/users/hero.jpg"
                   alt="Profesional de la salud"
                   width={600}
                   height={400}
@@ -367,12 +378,14 @@ export default function Modelo2() {
                 <span className={styles.imageCarouselInstructions}>
                   La salud es lo más importante, confía en un profesional
                 </span>
-                <ImageCarousel images={carouselImages} />
+                
+                <Slider slides={carouselImages} />
               </div>
               <WhatsAppButton
                 phone="+593986850295"
                 message="Hola, me gustaría saber más sobre tus servicios"
               />
+
             </Col>
           </Row>
 

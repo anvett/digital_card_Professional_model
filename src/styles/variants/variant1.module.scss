@@ -6,8 +6,8 @@
 //-------------------------------------------
 $primary-font: 'Lato', sans-serif;
 
-$primary-color: #36b24a;
-$secondary-color: #414141;
+$primary-color: #9F01B0;
+$secondary-color: #ffffff;
 $accent-color: #55ccc9;
 $dark-color: #000000;
 $light-color: #ffffff;
@@ -34,7 +34,7 @@ $light-color: #ffffff;
 }
 
 .navLink {
-  color: $secondary-color;
+  color: $primary-color;
   font-size: 1rem;
   cursor: pointer;
 
@@ -55,10 +55,10 @@ $light-color: #ffffff;
   align-items: center;
   flex-direction: column;
   //border: solid 5px $primary-color;
-  background-image: url("/images/backgrounds/background_1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  //background-color: $primary-color;
+  // background-image: url("/images/backgrounds/background_1.png");
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  background-color: $primary-color;
   //height: 100%;
 
   //Profile Image section
@@ -135,7 +135,7 @@ $light-color: #ffffff;
   padding: $spacing-4;
   width: 100%;
   height: auto;
-  background-color: $light-color;
+  //background-color: $light-color;
 }
 
 //Image section

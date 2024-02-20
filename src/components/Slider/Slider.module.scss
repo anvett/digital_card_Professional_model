@@ -1,0 +1,26 @@
+@import "../../styles/variables.scss";
+
+.title{
+    color: $dark-color;
+    background-color: $light-color;
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.description{
+    color: $secondary-color;
+    background-color: $light-color;
+    font-size: 0.3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.image{
+    max-width: 100%;
+    height: auto;
+    max-height: 700px;
+}

@@ -20,11 +20,11 @@ const CustomNavbar = ({logoSrc, logoClassName, navClassName, navLinkClassName} )
         <Navbar.Collapse>
         <Nav className={`${styles.nav} ${navClassName}` }>
           <Link to="profile" smooth={true} duration={500} className={`${styles.navLink} ${navLinkClassName}`}>
-            Perfil
+            Contacto
           </Link>
 
           <Link to="education" smooth={true} duration={500} className={`${styles.navLink} ${navLinkClassName}`}>
-            Educación
+            Especialidades
           </Link>
 
           <Link to="payment" smooth={true} duration={500} className={`${styles.navLink} ${navLinkClassName}`}>

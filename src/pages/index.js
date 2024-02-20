@@ -235,11 +235,11 @@ export default function Modelo2() {
                 >
                   <SocialMediaIcons
                     facebook="https://www.facebook.com/yulexis.flores.96"
-                    facebookIcon="/icons/facebook_g.png"
+                    facebookIcon="/icons/facebook_w.png"
                     // twitter="https://twitter.com/NelsinhoTV"
                     // twitterIcon="/icons/green_gb/xtwitter_gb.png"
                     instagram="https://www.instagram.com/draflores/"
-                    instagramIcon="/icons/instagram_g.png"
+                    instagramIcon="/icons/instagram_w.png"
                     // linkedin="https://www.linkedin.com/userlinkedin"
                     // linkedinIcon="/icons/green_gb/linkedin_gb.png"
                     //  youtube="https://www.youtube.com/useryoutube"
@@ -253,7 +253,7 @@ export default function Modelo2() {
                     //   tumblr="https://www.tumblr.com/usertumblr"
                     //   tumblrIcon="/icons/black/tumblr_b.png"
                     tiktok="https://www.tiktok.com/@yulexisflores0"
-                    tiktokIcon="/icons/tiktok_g.png"
+                    tiktokIcon="/icons/tiktok_w.png"
                   />
 
                   {/* Columna con información de contacto */}
@@ -265,7 +265,7 @@ export default function Modelo2() {
                       email="draflores_85@hotmail.com"
                       emailIcon="/icons/email_g.png"
                       whatsapp="+593986845992"
-                      whatsappIcon="/icons/whatsapp_g.png"
+                      whatsappIcon="/icons/whatsapp_w.png"
                       telegram="+593986845992"
                       telegramIcon="/icons/telegram_g.png"
                       location={"Clínica Infes, Quito, Ecuador"}
@@ -275,6 +275,7 @@ export default function Modelo2() {
                     <WhatsAppButton
                       phone="+593986850295"
                       message="Hola, me gustaría saber más sobre tus servicios"
+                      stylesButton={styles.whatsappButtonContact}
                     />
 
                     

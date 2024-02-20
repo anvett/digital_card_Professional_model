@@ -138,6 +138,15 @@ $light-color: #ffffff;
   //background-color: $light-color;
 }
 
+.whatsappButtonContact{
+  background-color: $light-color;
+  color: $primary-color;
+  &:hover {
+    background-color: darken($light-color, 10%);
+    transform: scale(1.05);
+  }
+}
+
 //Image section
 //-------------
 
@@ -356,13 +365,13 @@ $light-color: #ffffff;
   .paymentTitle {
     font-family: $primary-font;
     font-size: 2rem;
-    color: $secondary-color;
+    color: $primary-color;
     text-align: center;
     margin-bottom: $spacing-4;
   }
 
   .paymentInstructions {
-    color: $secondary-color;
+    color: $primary-color;
     text-align: center;
     font-size: 1rem;
     
@@ -399,7 +408,7 @@ $light-color: #ffffff;
   .scanText {
     margin-top: 5px;
     font-size: 1rem;
-    color: $dark-color;
+    color: $light-color;
     text-align: center;
   }
 }
@@ -412,7 +421,7 @@ $light-color: #ffffff;
   height: auto;
   .footerClassName {
     background-color: $light-color;
-    color: $secondary-color;
+    color: $primary-color;
     padding: $spacing-4;
 
     .containerFooterClassName {
@@ -424,14 +433,14 @@ $light-color: #ffffff;
         text-align: center;
       }
       .linkFooterClassName {
-        color: $secondary-color;
+        color: $primary-color;
         text-decoration: none;
         transition: $transition-fast;
         text-align: center;
 
         &:hover {
           text-decoration: underline;
-          color: $primary-color;
+          color: $dark-color;
         }
       }
     }

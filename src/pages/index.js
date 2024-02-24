@@ -24,23 +24,23 @@ import Slider from "@/components/Slider/Slider";
 
 
 export default function Modelo2() {
-  // const items = [
-  //   {
-  //     title: "Pregrado Medicina",
-  //     institution: "Escuela Politécnica del Chimborazo",
-  //     year: "2018",
-  //     description: "Graduado en Medicina en la Escuela Politécnica del Chimborazo.",
-  //     logo: "/images/education/espoch_logo.jpeg",
-  //   },
-  //   {
-  //     title: "Posgrado Traumatología",
-  //     institution: "Universidad San Francisco de Quito",
-  //     year: "2023",
-  //     description:
-  //       "Estudios de posgrado en Traumatología y Ortopedia en la Universidad San Francisco de Quito.",
-  //     logo: "/images/education/logo_usfq.png",
-  //   },
-  // ];
+  const items = [
+    {
+      title: "Cirugía General",
+      institution: "Universidad Central de Caracas",
+      year: "2008",
+      description: "Especialidad en Cirugía general y laparoscopía mínimamente invasiva.",
+      logo: "/images/education/u_caracas.png",
+    },
+    {
+      title: "Cirugía oncológica digestiva",
+      institution: "Universitat de Barcelona",
+      year: "2023",
+      description:
+        "Cirugía laparoscópica mínimamente invasiva. Prevención, diagnóstico, tratamiento y seguimiento de pacientes oncológicos.",
+      logo: "/images/education/u_barcelona.png",
+    },
+  ];
 
   // const images = [
   //   {
@@ -77,7 +77,7 @@ export default function Modelo2() {
     {
       src: "/images/users/cirugia2.jpeg",
       alt: "Nutrición imagen",
-      title: "Cirugía Oncológica Digestiva",
+      title: "Cirugía General y Laparoscópica",
       // description: ["Prevención,diagnóstico, tratamiento y seguimiento de pacientes oncologicos"],
     },
     {
@@ -89,13 +89,13 @@ export default function Modelo2() {
     {
       src: "/images/users/cirugia5.jpg",
       alt: "Nutrición imagen",
-      title: "Cirugía Oncológica Digestiva",
+      title: "Cirugía Laparoscópica",
       // description: ["Cirugía laparoscopica mínimamente invasiva"],
     },
     {
       src: "/images/users/cirugia6.jpg",
       alt: "Nutrición imagen",
-      title: "Cirugía Oncológica Digestiva",
+      title: "Especialista al cuidado de pacientes oncológicos",
       //experience: ["Cirugía laparoscopica mínimamente invasiva"],
     },
   ];
@@ -103,23 +103,24 @@ export default function Modelo2() {
   const service = [
     {
       service: "Cirugía General",
-      description: " Especialidad en Cirugía general y laparoscopia mínimamente invasiva. Caracas Venezuela",
+      description: " Especialidad en Cirugía general y laparoscopía mínimamente invasiva. Caracas Venezuela",
       imageUrl: "/images/users/cirugia3.jpeg",
     },
     {
       service: "Cirugía Oncológica Digestiva ",
-      description: "Cirugía laparoscopica mínimamente invasiva. Barcelona España. Prevención,diagnóstico, tratamiento y seguimiento de pacientes oncologicos.",
+      description: "Cirugía laparoscópica mínimamente invasiva. Barcelona España. Prevención, diagnóstico, tratamiento y seguimiento de pacientes oncológicos.",
       imageUrl: "/images/users/cirugia_oncologica_digestiva.jpg",
+    },
+    
+    {
+      service: "Soporte paliativo pacientes oncológicos",
+      description: "Procedimientos con objetivos específicos para aliviar los síntomas y mejorar la calidad de vida de pacientes oncológicos, manteniendo su independencia y autonomía. Barcelona España ",
+      imageUrl: "/images/users/cuidados_paliativos.jpg",
     },
     {
       service: "Nutrición y Dietética",
       description: "Evaluar, educar, diseñar planes nutricionales personalizados acorde con las necesidades. Manejo nutricional de pacientes oncológicos. Barcelona España",
       imageUrl: "/images/users/consulta2.jpeg",
-    },
-    {
-      service: "Soporte paliativo pacientes oncológicos",
-      description: "Procedimientos con objetivos específicos para aliviar los síntomas y mejorar la calidad de vida de pacientes oncológicos, manteniendo su independencia y autonomía. Barcelona España ",
-      imageUrl: "/images/users/cuidados_paliativos.jpg",
     },
   ];
 
@@ -185,7 +186,7 @@ export default function Modelo2() {
         {/* Open Graph */}
         <meta property="og:url" content="https://drayulexisflores.businessdigicards.com/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Business digital card Dra. Yulexis Flores" />
+        <meta property="og:title" content="Business digital card Dra. Yulexis J. Flores L." />
         <meta property="og:description" content="Tarjeta de presentación digital" />
         <meta
           property="og:image"
@@ -195,7 +196,7 @@ export default function Modelo2() {
 
       <Layout>
         <CustomNavbar
-          logoSrc="/images/users/logo.pn"
+          logoSrc="/images/users/logo.png"
           logoClassName={styles.navbarLogo}
           navClassName={styles.nav}
           navLinkClassName={styles.navLink}
@@ -219,15 +220,15 @@ export default function Modelo2() {
               </section>
               <section>
                 <PersonalInfo
-                  name="Dra. Yulexis Flores"
-                  title="Médico cirujano"
-                  description="especialista en cirugía general digestiva. Especialista en nutrición y dietética. Soporte paliativo "
+                  name="Dra. Yulexis J. Flores L."
+                  title="Médico Cirujano"
+                  description="Especialista en Cirugía general y Laparoscópica. Cirugía Digestiva. Especialista  en Nutrición y Dietética. Soporte paliativo a pacientes Oncológicos "
                   nameClassName={styles.personalInfoName}
                   titleClassName={styles.personalInfoTitle}
                   descriptionClassName={styles.personalInfoDescription}
                 />
               </section>
-              <section className={styles.socialMediaSection}>
+              <section id="contacto" className={styles.socialMediaSection}>
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -235,11 +236,11 @@ export default function Modelo2() {
                 >
                   <SocialMediaIcons
                     facebook="https://www.facebook.com/yulexis.flores.96"
-                    facebookIcon="/icons/facebook_w.png"
+                    facebookIcon="/icons/facebook_f.png"
                     // twitter="https://twitter.com/NelsinhoTV"
                     // twitterIcon="/icons/green_gb/xtwitter_gb.png"
                     instagram="https://www.instagram.com/draflores/"
-                    instagramIcon="/icons/instagram_w.png"
+                    instagramIcon="/icons/instagram_f.png"
                     // linkedin="https://www.linkedin.com/userlinkedin"
                     // linkedinIcon="/icons/green_gb/linkedin_gb.png"
                     //  youtube="https://www.youtube.com/useryoutube"
@@ -253,7 +254,7 @@ export default function Modelo2() {
                     //   tumblr="https://www.tumblr.com/usertumblr"
                     //   tumblrIcon="/icons/black/tumblr_b.png"
                     tiktok="https://www.tiktok.com/@yulexisflores0"
-                    tiktokIcon="/icons/tiktok_w.png"
+                    tiktokIcon="/icons/tiktok_f.png"
                   />
 
                   {/* Columna con información de contacto */}
@@ -261,15 +262,15 @@ export default function Modelo2() {
                   <section className={styles.contactButtons}>
                     <ContactIcons
                       phone="+593986845992"
-                      phoneIcon="/icons/call_g.png"
+                      phoneIcon="/icons/call_f.png"
                       email="draflores_85@hotmail.com"
-                      emailIcon="/icons/email_g.png"
+                      emailIcon="/icons/mail_f.png"
                       whatsapp="+593986845992"
-                      whatsappIcon="/icons/whatsapp_w.png"
+                      whatsappIcon="/icons/whatsapp_f.png"
                       telegram="+593986845992"
-                      telegramIcon="/icons/telegram_g.png"
+                      telegramIcon="/icons/telegram_f.png"
                       location={"Clínica Infes, Quito, Ecuador"}
-                      locationIcon="/icons/ubicacion_g.png"
+                      locationIcon="/icons/ubicacion_f.png"
                     />
 
                     <WhatsAppButton
@@ -299,7 +300,7 @@ export default function Modelo2() {
 
           {/* Componente de educación y certificaciones */}
 
-          {/* <Row>
+          <Row>
             <Col className={styles.educationSection}>
               <section id="education">
                 <div className={styles.educationText}>
@@ -324,7 +325,7 @@ export default function Modelo2() {
                 </motion.div>
               </section>
             </Col>
-          </Row> */}
+          </Row>
 
           {/* Componente de experiencia laboral */}
 
@@ -346,14 +347,14 @@ export default function Modelo2() {
             </Col>
           </Row> */}
 
-          {/* Componente de servicios */}
+          {/* Componente de servicios y/o especialidades */}
 
           <Row>
-            <Col className={styles.educationSection}>
+            <Col className={styles.servicesSection}>
               <section id="education">
-                <div className={styles.educationText}>
-                  <h2 className={styles.educationTitle}>Especialidades</h2>
-                  <span className={styles.educationInstructions}>
+                <div className={styles.servicesText}>
+                  <h2 className={styles.servicesTitle}>Especialidades</h2>
+                  <span className={styles.servicesInstructions}>
                     Haz clic en el item para ver la información
                   </span>
                 </div>
@@ -362,7 +363,7 @@ export default function Modelo2() {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1 }}
                 >
-                  <div className={styles.educationInfo}>
+                  <div className={styles.servicesInfo}>
                     <Services services={service} />
                   </div>
                 </motion.div>

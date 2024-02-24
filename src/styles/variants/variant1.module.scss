@@ -55,10 +55,10 @@ $light-color: #ffffff;
   align-items: center;
   flex-direction: column;
   //border: solid 5px $primary-color;
-  // background-image: url("/images/backgrounds/background_1.png");
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  background-color: $primary-color;
+  background-image: url("/images/backgrounds/background2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  //background-color: $primary-color;
   //height: 100%;
 
   //Profile Image section
@@ -71,7 +71,7 @@ $light-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 6rem;
+    margin-top: 8rem;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -103,20 +103,20 @@ $light-color: #ffffff;
 
   .personalInfoName {
     color: $secondary-color;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 0.5rem;
     text-align: center;
     font-family: $primary-font;
   }
   .personalInfoTitle {
     color: $secondary-color;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
     text-align: center;
   }
   .personalInfoDescription {
     color: $secondary-color;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
   }
 }
@@ -139,11 +139,11 @@ $light-color: #ffffff;
 }
 
 .whatsappButtonContact{
-  background-color: $light-color;
-  color: $primary-color;
+  background-color: $light-color !important;
+  color: $primary-color !important;
   &:hover {
-    background-color: darken($light-color, 10%);
-    transform: scale(1.05);
+    background-color: darken($light-color, 10%) !important;
+    transform: scale(1.05) !important;
   }
 }
 
@@ -177,7 +177,7 @@ $light-color: #ffffff;
   padding: $spacing-4;
   width: 100%;
   height: auto;
-  background-color: $primary-color;
+  background-color: $light-color;
 
   .educationText{
     margin-bottom: $spacing-4;
@@ -189,13 +189,14 @@ $light-color: #ffffff;
   .educationTitle {
     font-family: $primary-font;
     font-size: 2rem;
-    color: $secondary-color;
+    color: $dark-color;
     text-align: center;
     margin-bottom: $spacing-4;
+    
   }
 
   .educationInstructions{
-    color: $secondary-color;
+    color: $primary-color;
     text-align: center;
     font-size: 1rem;
   }
@@ -223,8 +224,51 @@ $light-color: #ffffff;
     color: $dark-color;
     text-align: center;
     font-size: 1rem;
+    max-width: 80%;
+    word-wrap: break-word;
   }
 }
+
+//---------------------------------
+//Services and specialities section
+//---------------------------------
+
+.servicesSection{
+  padding: $spacing-4;
+  width: 100%;
+  height: auto;
+  //background-color: $primary-color;
+  background-image: url("/images/backgrounds/background1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .servicesText{
+    margin-bottom: $spacing-4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;}
+
+  .servicesTitle {
+    font-family: $primary-font;
+    font-size: 2rem;
+    color: $secondary-color;
+    text-align: center;
+    margin-bottom: $spacing-4;
+  }
+
+  .servicesInstructions{
+    color: $secondary-color;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+
+
+}
+
+
+
 
 //Work Experience and Services text
 //---------------------------------
@@ -392,7 +436,10 @@ $light-color: #ffffff;
 //-------------------------------------------
 
 .videoPlayer {
-  background-color: $primary-color;
+  //background-color: $primary-color;
+  background-image: url("/images/backgrounds/background1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
 }
 

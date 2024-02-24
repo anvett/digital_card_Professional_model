@@ -19,7 +19,7 @@ const CustomNavbar = ({logoSrc, logoClassName, navClassName, navLinkClassName} )
         </Navbar.Brand>
         <Navbar.Collapse>
         <Nav className={`${styles.nav} ${navClassName}` }>
-          <Link to="profile" smooth={true} duration={500} className={`${styles.navLink} ${navLinkClassName}`}>
+          <Link to="contacto" smooth={true} duration={500} className={`${styles.navLink} ${navLinkClassName}`}>
             Contacto
           </Link>
 

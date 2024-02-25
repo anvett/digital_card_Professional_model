@@ -27,13 +27,13 @@ export default function Modelo2() {
   const items = [
     {
       title: "Cirugía General",
-      institution: "Universidad Central de Caracas",
+      institution: "Universidad Central de Venezuela",
       year: "2008",
       description: "Especialidad en Cirugía general y laparoscopía mínimamente invasiva.",
       logo: "/images/education/u_caracas.png",
     },
     {
-      title: "Cirugía oncológica digestiva",
+      title: "Cirugía Oncológica Digestiva",
       institution: "Universitat de Barcelona",
       year: "2023",
       description:
@@ -221,8 +221,8 @@ export default function Modelo2() {
               <section>
                 <PersonalInfo
                   name="Dra. Yulexis J. Flores L."
-                  title="Médico Cirujano"
-                  description="Especialista en Cirugía general y Laparoscópica. Cirugía Digestiva. Especialista  en Nutrición y Dietética. Soporte paliativo a pacientes Oncológicos "
+                  title="Médico Cirujano General"
+                  description="Especialista en Cirugía General y Laparoscópica. Cirugía Oncológica Digestiva. Cirugía robótica y de mínima invasión. Nutrición y Dietética. Medicina paliativa. "
                   nameClassName={styles.personalInfoName}
                   titleClassName={styles.personalInfoTitle}
                   descriptionClassName={styles.personalInfoDescription}
